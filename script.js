@@ -22,7 +22,7 @@ class Line {
             context.lineWidth = this.lineWidth;
             context.beginPath();
             context.moveTo(this.startX, this.startY);
-            contect.lineTo(this.endX, this.endY);
+            context.lineTo(this.endX, this.endY);
             context.stroke();
       }
 }     
