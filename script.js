@@ -52,7 +52,7 @@ console.log(linesArray);
 
 
 function animate() {
-      ctx.clearRect(0, 0 canvas.width, canvas.height);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
       linesArray.forEach(line => {
             line.draw(ctx)
             line.update()
