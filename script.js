@@ -22,7 +22,7 @@ class Line {
             context.strokeStyle = "hsl(" + this.hue + ", 100%, 50%)";
             context.lineWidth = this.lineWidth;
             context.beginPath();
-            context.moveTo(this.startXhistory[0].x, this.history[0].y);
+            context.moveTo(this.history[0].x, this.history[0].y);
             for (let i = 0; i < 3; i++) {
                   this.x = Math.random() * this.canvas.width;
                   this.y = Math.random() * this.canvas.height;
