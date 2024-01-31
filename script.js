@@ -52,8 +52,10 @@ console.log(linesArray);
 
 function animate() {
       ctx.clearRect();
-      linesArray.forEach(line => line.draw(ctx));
-      linesArray.forEach(line => line.update(ctx));
+      linesArray.forEach(line => {
+            line.draw(ctx);
+            line.update()
+      });
       
       requestAmimationFrame(animate);
 }      
