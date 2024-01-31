@@ -58,7 +58,7 @@ function animate() {
             line.update()
       });
       
-      requestAmimationFrame(animate);
+      requestAnimationFrame(animate);
 }      
 animate();      
       
