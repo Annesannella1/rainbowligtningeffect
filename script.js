@@ -12,7 +12,7 @@ class Line {
             this.canvas = canvas;
             this.x = Math.random() * this.canvas.width;
             this.x = Math.random() * this.canvas.height;
-            this.history = {x: this.x, y: this.y};
+            this.history = [{x: this.x, y: this.y}];
             //this.endX = Math.random() * this.canvas.width;
             //this.endY = Math.random() * this.canvas.height;
             this.lineWidth = Math.floor(Math.random() * 15 + 1);
