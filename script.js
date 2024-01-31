@@ -29,6 +29,7 @@ class Line {
             for (let i = 0; i < this.history.length; i++) {
                   
                  context.lineTo(this.history[i].x, this.history[i].y);
+            }      
             context.stroke();
       }
       update(){
@@ -53,7 +54,7 @@ console.log(linesArray);
 function animate() {
       ctx.clearRect();
       linesArray.forEach(line => {
-            line.draw(ctx);
+            line.draw(ctx)
             line.update()
       });
       
