@@ -23,13 +23,13 @@ class Line {
             context.lineWidth = this.lineWidth;
             context.beginPath();
             context.moveTo(this.startXhistory[0].x, this.history[0].y);
-            for (let i = 0, i < 3, i++) {
+            for (let i = 0; i < 3; i++) {
                   this.x = Math.random() * this.canvas.width;
                   this.y = Math.random() * this.canvas.height;
                   this.history.push({x: this.x, y: this.y});
             }      
                   
-            for (let i = 0, i < this.history.length, i++) {
+            for (let i = 0; i < this.history.length; i++) {
                   
                  context.lineTo(this.history[i].x, this.history[i].y);
             }      
