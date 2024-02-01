@@ -63,8 +63,8 @@ class Line {
       //      this.timer = 0;
      // }
       update(){
-            this.x += this.speedX;
-            this.y += this.speedY;
+            this.x = this.speedX;
+            this.y = this.speedY;
            // this.x = Math.random() * this.canvas.width;
             console.log(this.x);
            // this.y = Math.random() * this.canvas.height;
