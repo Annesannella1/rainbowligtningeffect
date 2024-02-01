@@ -64,7 +64,7 @@ class Line {
 }     
             
 const linesArray = [];
-const numberOfLines = 2;
+const numberOfLines = 4;
 for (let i = 0; i < numberOfLines; i++){
       linesArray.push(new Line(canvas));
 }
