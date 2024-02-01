@@ -11,7 +11,7 @@ class Line {
       constructor(canvas) {
             this.canvas = canvas;
              this.x = Math.random() * this.canvas.width;
-            this.x = Math.random() * this.canvas.height;
+            this.y = Math.random() * this.canvas.height;
             this.history = [{x: this.x, y: this.y}];
             
             //this.endX = Math.random() * this.canvas.width;
