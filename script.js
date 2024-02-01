@@ -74,7 +74,7 @@ console.log(linesArray);
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     linesArray.forEach(line => line.draw(ctx));
-    linesArray.forEach(line => line.update();
+    linesArray.forEach(line => line.update());
     requestAnimationFrame(animate);
 }      
 animate();      
