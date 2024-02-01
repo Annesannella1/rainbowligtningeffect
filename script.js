@@ -10,9 +10,10 @@ console.log(ctx);
 class Line {
       constructor(canvas) {
             this.canvas = canvas;
-            this.x = Math.random() * this.canvas.width;
+             this.x = Math.random() * this.canvas.width;
             this.x = Math.random() * this.canvas.height;
             this.history = [{x: this.x, y: this.y}];
+            
             //this.endX = Math.random() * this.canvas.width;
             //this.endY = Math.random() * this.canvas.height;
             this.lineWidth = Math.floor(Math.random() * 15 + 1);
@@ -20,6 +21,9 @@ class Line {
             this.maxLength = 10;
             this.speedX = 2;
             this.speedY = 6;
+            this.lifeSpan = this.maxLength * 10;
+            this.timer = 0;
+            
       }
       draw(context){
             context.strokeStyle = "hsl(" + this.hue + ", 100%, 50%)";
@@ -35,15 +39,26 @@ class Line {
             context.stroke();
       }
       update(){
-            this.x += this.speedX + Math.random() * 50 - 25;
-            this.y += this.speedY + Math.random() * 50 - 25;
-           // this.x = Math.random() * this.canvas.width;
-            //this.y = Math.random() * this.canvas.height;
-            this.history.push({x: this.x, y: this.y});
-            if (this.history.length > this.maxLength){
+            this.timer++;
+            if (this.timer < this.lifeSpan){ 
+                this.x += this.speedX + Math.random() * 50 - 25;
+                this.y += this.speedY + Math.random() * 50 - 25;
+                this.history.push({x: this.x, y: this.y});
+                if (this.history.length > this.maxLength){
+                    this.history.shift();
+                }      
+            } else if (this.history.length <= 1){
+                  this.reset();
+            } else {
                   this.history.shift();
-            }
-      }      
+            } 
+      reset(){
+            this.x = Math.random() * this.canvas.width;
+            this.x = Math.random() * this.canvas.height;
+            this.history = [{x: this.x, y: this.y}];
+            this.timer = 0;
+      }
+      
             
 }     
             
