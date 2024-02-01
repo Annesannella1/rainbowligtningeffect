@@ -19,8 +19,8 @@ class Line {
             this.lineWidth = Math.floor(Math.random() * 15 + 1);
             this.hue = Math.floor(Math.random() * 360);
             this.maxLength = 5;
-            this.speedX = 2;
-            this.speedY = 6;
+            this.speedX = Math.random() * 5 - 2.5;
+            this.speedY = 10;
             this.lifeSpan = this.maxLength * 5;
             this.timer = 0;
             
@@ -41,7 +41,7 @@ class Line {
     update(){
             this.timer++;
             if (this.timer < this.lifeSpan){ 
-                this.x += this.speedX + Math.random() * 50 - 25;
+                this.x += this.speedX + Math.random() * 10 - 25;
                   console.log(this.x);
                 this.y += this.speedY + Math.random() * 50 - 25;
                   console.log(this.y);
