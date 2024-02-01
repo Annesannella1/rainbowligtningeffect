@@ -21,7 +21,7 @@ class Line {
             this.maxLength = 10;
             this.speedX = 2;
             this.speedY = 6;
-            this.lifeSpan = this.maxLength * 10;
+            this.lifeSpan = this.maxLength * 5;
             this.timer = 0;
             
       }
@@ -72,13 +72,10 @@ console.log(linesArray);
 
 
 function animate() {
-    //  ctx.clearRect(0, 0, canvas.width, canvas.height);
-      linesArray.forEach(line => {
-            line.draw(ctx)
-            line.update()
-      });
-      
-      requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    linesArray.forEach(line => line.draw(ctx));
+    linesArray.forEach(line => line.update();
+    requestAnimationFrame(animate);
 }      
 animate();      
       
