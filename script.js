@@ -38,30 +38,43 @@ class Line {
             }      
             context.stroke();
       }
+     // update(){
+       //     this.timer++;
+         //   if (this.timer < this.lifeSpan){ 
+           //     this.x += this.speedX + Math.random() * 50;
+             //     console.log(this.x);
+              //  this.y += this.speedY + Math.random() * 50;
+               //   console.log(this.y);
+              //  this.history.push({x: this.x, y: this.y});
+              //  if (this.history.length > this.maxLength){
+                //    this.history.shift();
+                //}      
+            //} else if (this.history.length <= 1){
+            //      console.log("resetting");
+            //      this.reset();
+            //} else {
+            //      this.history.shift();
+           // } 
+     // }      
+     // reset(){
+      //      this.x = Math.random() * this.canvas.width;
+      //      this.x = Math.random() * this.canvas.height;
+      //      this.history = [{x: this.x, y: this.y}];
+      //      this.timer = 0;
+     // }
       update(){
-            this.timer++;
-            if (this.timer < this.lifeSpan){ 
-                this.x += this.speedX + Math.random() * 50;
-                this.y += this.speedY + Math.random() * 50;
-                this.history.push({x: this.x, y: this.y});
-                if (this.history.length > this.maxLength){
-                    this.history.shift();
-                }      
-            } else if (this.history.length <= 1){
-                  this.reset();
-            } else {
-                  this.history.shift();
-            } 
-      }      
-      reset(){
             this.x = Math.random() * this.canvas.width;
-            this.x = Math.random() * this.canvas.height;
-            this.history = [{x: this.x, y: this.y}];
-            this.timer = 0;
-      }
+            console.log(this.x);
+            this.y = Math.random() * this.canvas.height;
+            console.log(this.y);
+            this.history.push({x: this.x, y: this.y});
+            if (this.history.length > this.maxLength){
+                this.history.shift();
+            }      
       
-            
-}     
+       } 
+}      
+   
             
 const linesArray = [];
 const numberOfLines = 4;
