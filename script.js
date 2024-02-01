@@ -38,44 +38,46 @@ class Line {
             }      
             context.stroke();
       }
-     // update(){
-       //     this.timer++;
-         //   if (this.timer < this.lifeSpan){ 
-           //     this.x += this.speedX + Math.random() * 50;
-             //     console.log(this.x);
-              //  this.y += this.speedY + Math.random() * 50;
-               //   console.log(this.y);
-              //  this.history.push({x: this.x, y: this.y});
-              //  if (this.history.length > this.maxLength){
-                //    this.history.shift();
-                //}      
-            //} else if (this.history.length <= 1){
-            //      console.log("resetting");
-            //      this.reset();
-            //} else {
-            //      this.history.shift();
-           // } 
-     // }      
-     // reset(){
-      //      this.x = Math.random() * this.canvas.width;
-      //      this.x = Math.random() * this.canvas.height;
-      //      this.history = [{x: this.x, y: this.y}];
-      //      this.timer = 0;
-     // }
-      update(){
-           this.x = this.x + this.speedX;
-           this.y = this.y + this.speedY;
+ update(){
+            this.timer++;
+            if (this.timer < this.lifeSpan){ 
+                this.x += this.speedX + Math.random() * 50;
+                  console.log(this.x);
+                this.y += this.speedY + Math.random() * 50;
+                  console.log(this.y);
+                this.history.push({x: this.x, y: this.y});
+                if (this.history.length > this.maxLength){
+                    this.history.shift();
+                }      
+            } else if (this.history.length <= 1){
+                  console.log("resetting");
+                  this.reset();
+            } else {
+                  this.history.shift();
+            } 
+      }      
+      reset(){
+            this.x = Math.random() * this.canvas.width;
+            this.y = Math.random() * this.canvas.height;
+            this.history = [{x: this.x, y: this.y}];
+            this.timer = 0;
+ }
+}
+
+   //   update(){
+   //        this.x = this.x + this.speedX;
+   //        this.y = this.y + this.speedY;
            //this.x = Math.random() * this.canvas.width;
-           console.log(this.x, this.y);
+  //         console.log(this.x, this.y);
            //this.y = Math.random() * this.canvas.height;
       
-           this.history.push({x: this.x, y: this.y});
-           if (this.history.length > this.maxLength){
-                this.history.shift();
-           }      
+    //       this.history.push({x: this.x, y: this.y});
+    //       if (this.history.length > this.maxLength){
+    //            this.history.shift();
+    //       }      
       
-       } 
-}      
+    //   } 
+}//      
    
             
 const linesArray = [];
