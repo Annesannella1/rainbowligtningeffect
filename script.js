@@ -18,7 +18,7 @@ class Line {
             //this.endY = Math.random() * this.canvas.height;
             this.lineWidth = Math.floor(Math.random() * 15 + 1);
             this.hue = Math.floor(Math.random() * 360);
-            this.maxLength = 10;
+            this.maxLength = 5;
             this.speedX = 2;
             this.speedY = 6;
             this.lifeSpan = this.maxLength * 5;
