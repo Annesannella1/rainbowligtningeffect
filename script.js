@@ -38,7 +38,7 @@ class Line {
             }      
             context.stroke();
       }
- update(){
+    update(){
             this.timer++;
             if (this.timer < this.lifeSpan){ 
                 this.x += this.speedX + Math.random() * 50;
@@ -61,8 +61,8 @@ class Line {
             this.y = Math.random() * this.canvas.height;
             this.history = [{x: this.x, y: this.y}];
             this.timer = 0;
- }
-}
+     }
+
 
    //   update(){
    //        this.x = this.x + this.speedX;
