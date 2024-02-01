@@ -52,6 +52,7 @@ class Line {
             } else {
                   this.history.shift();
             } 
+      }      
       reset(){
             this.x = Math.random() * this.canvas.width;
             this.x = Math.random() * this.canvas.height;
