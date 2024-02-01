@@ -63,11 +63,11 @@ class Line {
       //      this.timer = 0;
      // }
       update(){
-         //   this.x = this.speedX;
-         //   this.y = this.speedY;
-           this.x = Math.random() * this.canvas.width;
+           this.x = this.x + this.speedX;
+           this.y = this.y + this.speedY;
+           //this.x = Math.random() * this.canvas.width;
            console.log(this.x);
-           this.y = Math.random() * this.canvas.height;
+           //this.y = Math.random() * this.canvas.height;
            console.log(this.y);
            this.history.push({x: this.x, y: this.y});
            if (this.history.length > this.maxLength){
