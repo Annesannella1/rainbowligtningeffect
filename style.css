@@ -5,7 +5,7 @@
 }
 
 canvas {
-   border: 10px solid black;
+   border: 10px solid #B1C381;
    position: absolute;
   animation-name: colorchange;
    animation-duration: 11s;
@@ -17,16 +17,16 @@ canvas {
 }
 
 @keyframes colorchange {
-    0%{background-color: #FAE98B;}
-    10%{background-color: #FFCF81;}
-    20%{background-color: #FFB996;}
-    30%{background-color: #D9EFB9;}
-    40%{background-color: #FAE98B;}
-    50%{background-color: #FFCF81;}
-    60%{background-color: #FFB996;}
-    70%{background-color: #D9EFB9;}
-    80%{background-color: #FAE98B;}
-    90%{background-color: #FFCF81;}
-    100%{background-color: #FFB996;}
+    0%{background-color: #8ACDD7;}
+    10%{background-color: #F9F9E0;}
+    20%{background-color: #FFC0D9;}
+    30%{background-color: #FF90BC;}
+    40%{background-color: #8ACDD7;}
+    50%{background-color: #F9F9E0;}
+    60%{background-color: #FFC0D9;}
+    70%{background-color: #FF90BC;}
+    80%{background-color: #8ACDD7;}
+    90%{background-color: #F9F9E0;}
+    100%{background-color: #FFC0D9;}
 }
    
