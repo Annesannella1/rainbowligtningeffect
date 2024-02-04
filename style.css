@@ -17,16 +17,16 @@ canvas {
 }
 
 @keyframes colorchange {
-    0%{background-color: #FF6138;}
-    10%{background-color: #FFBE53;}
-    20%{background-color: #298089;}
-    30%{background-color: #282741;}
-    40%{background-color: #FF6138;}
-    50%{background-color: #FFBE53;}
-    60%{background-color: #298089;}
-    70%{background-color: #282741;}
-    80%{background-color: #FF6138;}
-    90%{background-color: #FFBE53;}
-    100%{background-color: #298089;}
+    0%{background-color: #FAE98B;}
+    10%{background-color: #FFCF81;}
+    20%{background-color: #FFB996;}
+    30%{background-color: #D9EFB9;}
+    40%{background-color: #FAE98B;}
+    50%{background-color: #FFCF81;}
+    60%{background-color: #FFB996;}
+    70%{background-color: #D9EFB9;}
+    80%{background-color: #FAE98B;}
+    90%{background-color: #FFCF81;}
+    100%{background-color: #FFB996;}
 }
    
