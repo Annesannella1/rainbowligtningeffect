@@ -26,7 +26,8 @@ class Line {
             
       }
       draw(context){
-            context.strokeStyle = "hsl(" + this.hue + ", 100%, 50%)";
+           // context.strokeStyle = "hsl(" + this.hue + ", 100%, 50%)";
+            context.strokeStyle = "red";
             context.lineWidth = this.lineWidth;
             context.beginPath();
             context.moveTo(this.history[0].x, this.history[0].y);
