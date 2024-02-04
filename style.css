@@ -5,7 +5,7 @@
 }
 
 canvas {
-   border: 10px solid red;
+   border: 10px solid black;
    position: absolute;
   animation-name: colorchange;
    animation-duration: 11s;
